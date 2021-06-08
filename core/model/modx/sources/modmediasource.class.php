@@ -1980,7 +1980,7 @@ abstract class modMediaSource extends modAccessibleSimpleObject implements modMe
      */
     protected function getAllowedExtensionsArray($properties = [])
     {
-        $allowedExtensions = $this->getOption('allowedFileTypes', $properties, '');
+        $allowedExtensions = $this->getOption('allowedFileTypes', $this->properties, '');
         if (is_string($allowedExtensions)) {
             if (empty($allowedExtensions)) {
                 $allowedExtensions = [];
